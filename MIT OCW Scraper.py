@@ -30,6 +30,7 @@ while loop1:
         sleep(2)
         continue
 
+print(r.content.decode())
 jsonTexts =  json.loads(r.content.decode())
 for jsonText in jsonTexts:
     topics.append([jsonText["name"],jsonText['file']])
